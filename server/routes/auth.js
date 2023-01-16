@@ -82,8 +82,17 @@ router.post('/signin',(req,res, next)=>{
 });
 
 
+//logout
+router.get('/logout', (req,res, next)=>{
+    req.logout(function(err){
+        if(err){return next(err);}
+        req.flash('success_msg','You are looged out')
+        res.redirect('/signin')
 
 
+    });
+   
+});
 
 
 

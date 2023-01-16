@@ -71,7 +71,7 @@ app.use('/', require('./server/routes/index'))
 app.use('/', require('./server/routes/auth'))
 app.use('/', require('./server/routes/dashboard'))
 
-app.use('/', require('./server/routes/test'))
+
 
 //handle 404
 app.get('*',function (req,res){
