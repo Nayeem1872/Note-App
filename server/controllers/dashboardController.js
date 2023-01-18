@@ -133,3 +133,21 @@ try {
 
 
 }
+
+
+
+
+exports.dashboardAddNoteSubmit = async (req,res)=>{
+    try {
+        res.render('dashboard/search',{
+            searchResult:'',
+            layout:'../views/layout/dashboard'
+        })
+    } catch (error) {
+        
+    }
+
+
+
+
+}
