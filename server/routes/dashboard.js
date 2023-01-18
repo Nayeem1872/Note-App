@@ -14,5 +14,7 @@ router.delete('/dashboard/item-delete/:id',ensureAuthenticated,dashboardControll
 
 router.get('/dashboard/add',ensureAuthenticated,dashboardController.dashboardAddNote);
 router.post('/dashboard/add',ensureAuthenticated,dashboardController.dashboardAddNoteSubmit);
+router.get('/dashboard/search',ensureAuthenticated,dashboardController.dashboardSearch);
+router.post('/dashboard/search',ensureAuthenticated,dashboardController.dashboardSearchSubmit);
 
 module.exports= router;
